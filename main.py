@@ -63,7 +63,7 @@ from dash import Dash, html, dcc
 import plotly.express as px
 app = Dash(__name__)
 
-fig = px.bar(final_data, x="remote_work", y="self_employed", color="mental_health_consequence", barmode="group")
+fig = px.bar(final_data, x="mental_health_consequence", y="remote_work", color="state", barmode="group")
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
 
